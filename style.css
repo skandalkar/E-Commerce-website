@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +9,53 @@
     /* border: 0.0000001px solid red; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+
 /* Header section */
 #header {
     display: flex;
@@ -16,7 +63,11 @@
     justify-content: space-between;
     padding: 5px 80px;
     background-color: #dee0e9;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(59, 59, 59, 0.1);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #nav-bar {
@@ -43,7 +94,8 @@
 #nav-bar li a.active {
     color: #088178;
 }
-#nav-bar li a.active::after, 
+
+#nav-bar li a.active::after,
 #nav-bar li a:hover::after {
     content: "";
     width: 30%;
@@ -54,6 +106,105 @@
     left: 20px;
 }
 
-.logo{
+.logo {
     height: 40px;
+}
+
+
+/* Home section */
+#hero {
+    background-image: url(Assets/Images/__2Untitled.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: top 0% right 0;
+    background-size: cover;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    color: #088178;
+}
+
+#hero p {
+    font-size: 25px;
+    color: #353535;
+}
+
+#hero button {
+    background-image: url(Assets/Images/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 15px 60px 14px 60px;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* hero section features */
+#features .features-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px solid #cce7d0;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 20px 20px 35px rgba(0,0,0,0.03);
+    
+}
+.features-box img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+.features-box h4 {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 9px 8px;
+    line-height: 1;
+    color: #088178;
+    border-radius: 4px;
+    display: inline-block;
+}
+#features .features-box:hover {
+    box-shadow: 10px 10px 35px rgba(26, 25, 25, 0.164);
+}
+
+#features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#features .easy-shopping {
+    background-color: #f8e0e5;
+}
+#features .order_online {
+    background-color: #d8fcf9;
+}
+#features .save_money {
+    background-color: #dce7fc;
+}
+#features .happy-sell {
+    background-color: #fded91;
+}
+#features .full-support {
+    background-color: #cbfafd;
+}
+#features .promotion {
+    background-color: #facebd;
 }
