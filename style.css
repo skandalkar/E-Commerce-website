@@ -162,14 +162,16 @@ body {
     border: 1px solid #cce7d0;
     border-radius: 5px;
     margin: 20px 25px;
-    box-shadow: 20px 20px 35px rgba(0,0,0,0.03);
-    
+    box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.03);
+
 }
+
 .features-box img {
     width: 150px;
     height: 150px;
     margin-bottom: 5px;
 }
+
 .features-box h4 {
     font-weight: 500;
     font-size: 20px;
@@ -179,6 +181,7 @@ body {
     border-radius: 4px;
     display: inline-block;
 }
+
 #features .features-box:hover {
     box-shadow: 10px 10px 35px rgba(26, 25, 25, 0.164);
 }
@@ -193,18 +196,23 @@ body {
 #features .easy-shopping {
     background-color: #f8e0e5;
 }
+
 #features .order_online {
     background-color: #d8fcf9;
 }
+
 #features .save_money {
     background-color: #dce7fc;
 }
+
 #features .happy-sell {
     background-color: #fded91;
 }
+
 #features .full-support {
     background-color: #cbfafd;
 }
+
 #features .promotion {
     background-color: #facebd;
 }
@@ -216,10 +224,12 @@ body {
 #product1 {
     text-align: center;
 }
-#product1 p{
+
+#product1 p {
     font-size: 18px;
     margin-top: 1px;
 }
+
 #product1 .product-item {
     /* background-color: #eeeeee; */
     width: 20%;
@@ -228,42 +238,50 @@ body {
     border: 1px solid #cce7d0;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.03);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
     margin: 15px 15px;
     transition: 0.2s ease;
     position: relative;
 }
+
 #product1 .product-item:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.089);
 }
+
 #product1 .product-item img {
     width: 100%;
     border-radius: 20px;
 }
+
 #product1 .product-item .item-description {
     text-align: start;
     padding: 10px 0;
 }
-#product1 .product-item .item-description span{
+
+#product1 .product-item .item-description span {
     font-size: 15px;
     color: #660636;
 }
-#product1 .product-item .item-description h5{
+
+#product1 .product-item .item-description h5 {
     padding-top: 6px;
     color: #1a1a1a;
     font-size: 15px;
 }
+
 #product1 .product-item .item-description .rating-star {
     color: gold;
     padding: 2px 0;
     font-size: 16px;
 }
-#product1 .product-item .item-description h4{
+
+#product1 .product-item .item-description h4 {
     padding-top: 6px;
     font-size: 15px;
     font-weight: 600;
     color: #088178;
 }
+
 #product1 .product-item .cart {
     width: 40px;
     height: 40px;
@@ -283,4 +301,31 @@ body {
     justify-content: space-between;
     padding-top: 20px;
     flex-wrap: wrap;
+}
+
+/* = Banner Section = */
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(Assets/Images/banner/summer-beach.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4 {
+    color: #e7eeed;
+    padding: 5px 0;
+    font-size: 25px;
+}
+#banner h2 {
+    color: white;
+    padding: 10px 0;
+    font-size: 30px;
+}
+#banner h2 span {
+    color: #018a81;
 }
