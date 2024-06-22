@@ -55,6 +55,25 @@ body {
     width: 100%;
 }
 
+button.normal {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+
+/* .h-ruler {
+    margin: 0;
+    border: 0.01px solid rgb(48, 48, 48);
+} */
 
 /* Header section */
 #header {
@@ -310,22 +329,207 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(Assets/Images/banner/summer-beach.jpg);
+    cursor: pointer;
+
+    outline: none;
+    transition: 0.3s ease;
+    /* background-image: url(Assets/Images/banner/summer.png); */
+    /* border-bottom: 0.1px solid rgb(44, 44, 44); */
+}
+
+.banner {
+    background-image: url(Assets/Images/banner/summer.png);
+    margin: 0 0;
     width: 100%;
     height: 40vh;
     background-size: cover;
     background-position: center;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+    margin: 0 0.1px;
+
+
 }
-#banner h4 {
-    color: #e7eeed;
+
+/* Banner related additional info */
+/* #banner h4 {
+    color: #000000;
     padding: 5px 0;
-    font-size: 25px;
+    font-size: 50px;
+    z-index: 99;
+    margin-top: 60px;
 }
 #banner h2 {
-    color: white;
+    color: #00ffff;
     padding: 10px 0;
     font-size: 30px;
 }
 #banner h2 span {
-    color: #018a81;
+    color: #00008B;
+} */
+
+/* 
+
+========================================================================
+
+ */
+
+#small-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+/*  */
+
+#small-banner .banner-box-container1 {
+    width: 50%;
+    height: auto;
+    padding: 5px 10px;
+    /* border: 1px solid red; */
+}
+
+#small-banner .banner-box-container2 {
+    width: 50%;
+    height: auto;
+    padding: 5px 10px;
+    /* border: 1px solid red; */
+}
+
+/*  */
+
+/* banner content 1 */
+.small-banner-content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(Assets/Images/banner/Edited.png);
+    /* min-width: 600px; */
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.89;
+
+    padding: 35px;
+    margin-top: 10px;
+
+    /* temp */
+    min-width: 50%;
+}
+
+#small-banner h4 {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+#small-banner h2 {
+    color: rgb(0, 153, 255);
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#small-banner span {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#small-banner h3 {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#small-banner .white {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 30px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+#small-banner .small-banner-content1:hover button {
+    background-color: #088178;
+    color: white;
+    border: 1px solid #088178;
+    box-shadow: 1px 1px 5px #6b6b6b;
+    outline: none;
+}
+
+
+/* banner content 2 */
+.small-banner-content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(Assets/Images/banner/shirts-hangged.jpg);
+    /* min-width: 600px; */
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.84;
+
+    margin-top: 10px;
+    padding: 35px;
+
+    /* temp */
+    min-width: 50%;
+}
+
+#small-banner .small-banner-content2 h4 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#small-banner .small-banner-content2 h2 {
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    font-weight: 800;
+}
+
+#small-banner .small-banner-content2 span {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#small-banner .small-banner-content2 h3 {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#small-banner .small-banner-content2 .white {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 30px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+#small-banner .small-banner-content2:hover button {
+    background-color: #088178;
+    color: white;
+    border: 1px solid #088178;
+    box-shadow: 1px 1px 5px #6b6b6b;
+    outline: none;
 }
