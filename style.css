@@ -68,12 +68,60 @@ button.normal {
     transition: 0.3s;
 }
 
-
-
 /* .h-ruler {
     margin: 0;
     border: 0.01px solid rgb(48, 48, 48);
 } */
+
+/* Additional gradient text coloring */
+.gradient-text {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+.gradient-text-small {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+
+/* Copy-Right Related Sliding Text */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: #0000ff;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear;
+    margin-bottom: 20px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+
 
 /* Header section */
 #header {
@@ -238,7 +286,6 @@ button.normal {
 
 
 
-
 /* = Products Section = */
 #product1 {
     text-align: center;
@@ -269,6 +316,8 @@ button.normal {
 
 #product1 .product-item img {
     width: 100%;
+    height: 250px;
+    /* fit for exact to all images-sizes */
     border-radius: 20px;
 }
 
@@ -322,6 +371,40 @@ button.normal {
     flex-wrap: wrap;
 }
 
+/*  */
+#view-more {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#view-more .view-more-button {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+#view-more .view-more-button a {
+    color: white;
+    padding: 10px 10px;
+}
+
+#view-more .view-more-button:hover {
+    background-color: #088178;
+    box-shadow: 1px 1px 2px rgb(146, 146, 146);
+}
+
+/*  */
+
 /* = Banner Section = */
 #banner {
     display: flex;
@@ -338,7 +421,7 @@ button.normal {
 }
 
 .banner {
-    background-image: url(Assets/Images/banner/summer.png);
+    background-image: url(Assets/Images/banner/b1.jpg);
     margin: 0 0;
     width: 100%;
     height: 40vh;
@@ -348,25 +431,39 @@ button.normal {
     flex-wrap: wrap;
     margin: 0 0.1px;
 
-
 }
 
 /* Banner related additional info */
-/* #banner h4 {
-    color: #000000;
+#banner h4 {
+    color: #ffffff;
     padding: 5px 0;
     font-size: 50px;
     z-index: 99;
     margin-top: 60px;
 }
+
 #banner h2 {
     color: #00ffff;
     padding: 10px 0;
     font-size: 30px;
 }
+
 #banner h2 span {
-    color: #00008B;
-} */
+    color: #ff0055;
+}
+
+#banner button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+#banner button:hover {
+    background-color: #088178;
+    border: 1px solid #088178;
+    transition: all 0.2s ease;
+    outline: none;
+}
 
 /* 
 
@@ -380,20 +477,19 @@ button.normal {
     flex-wrap: wrap;
 
 }
-/*  */
+
+/* div */
 
 #small-banner .banner-box-container1 {
     width: 50%;
     height: auto;
     padding: 5px 10px;
-    /* border: 1px solid red; */
 }
 
 #small-banner .banner-box-container2 {
     width: 50%;
     height: auto;
     padding: 5px 10px;
-    /* border: 1px solid red; */
 }
 
 /*  */
@@ -405,12 +501,11 @@ button.normal {
     justify-content: center;
     align-items: flex-start;
     background-image: url(Assets/Images/banner/Edited.png);
+
     /* min-width: 600px; */
     height: 50vh;
     background-size: cover;
     background-position: center;
-    opacity: 0.89;
-
     padding: 35px;
     margin-top: 10px;
 
@@ -419,29 +514,21 @@ button.normal {
 }
 
 #small-banner h4 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 30px;
     font-weight: 500;
-
 }
 
 #small-banner h2 {
-    color: rgb(0, 153, 255);
+    color: rgb(0, 110, 255);
     font-size: 40px;
     font-weight: 800;
 }
 
 #small-banner span {
-    color: white;
-    font-size: 15px;
-    font-weight: 500;
-    padding-bottom: 15px;
-}
-
-#small-banner h3 {
-    color: white;
-    font-size: 17px;
-    font-weight: 500;
+    color: rgb(53, 53, 53);
+    font-size: 18px;
+    font-weight: 600;
     padding-bottom: 15px;
 }
 
@@ -473,12 +560,12 @@ button.normal {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(Assets/Images/banner/shirts-hangged.jpg);
+    background-image: url(Assets/Images/banner/b10.jpg);
     /* min-width: 600px; */
     height: 50vh;
     background-size: cover;
     background-position: center;
-    opacity: 0.84;
+    opacity: 0.9;
 
     margin-top: 10px;
     padding: 35px;
@@ -490,10 +577,10 @@ button.normal {
 #small-banner .small-banner-content2 h4 {
     color: rgb(255, 255, 255);
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 650;
 }
 
-#small-banner .small-banner-content2 h2 {
+#small-banner .small-banner-content2 h1 {
     color: rgb(0, 0, 0);
     font-size: 45px;
     font-weight: 800;
@@ -501,15 +588,15 @@ button.normal {
 
 #small-banner .small-banner-content2 span {
     color: rgb(255, 255, 255);
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 700;
     padding-bottom: 15px;
 }
 
 #small-banner .small-banner-content2 h3 {
-    color: white;
-    font-size: 17px;
-    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 900;
     padding-bottom: 15px;
 }
 
@@ -532,4 +619,294 @@ button.normal {
     border: 1px solid #088178;
     box-shadow: 1px 1px 5px #6b6b6b;
     outline: none;
+}
+
+
+
+/* tiny-banner-section */
+
+#tiny-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 0 80px;
+    /* border: 1px solid red; */
+}
+
+/* div */
+#tiny-banner .banner-tiny-container1 {
+    width: 33%;
+    height: auto;
+    padding: 5px 5px;
+    /* border: 1px solid red; */
+    margin-top: 5px;
+}
+
+/* 1 */
+#tiny-banner .tiny-banner-content1 {
+    background-image: url(Assets/Images/banner/b18.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    min-width: 30%;
+    /* background: linear-gradient(to right top, rgb(196, 280, 275), rgb(26, 110, 240)); */
+    padding: 20px;
+    margin: 0 0px;
+}
+
+#tiny-banner .tiny-banner-content1 h2 {
+    font-size: 32px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #43e97b, #38f9d7, #fa709a, #fee140);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* padding-bottom: 15px; */
+}
+
+#tiny-banner .tiny-banner-content1 h3 {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* 2 */
+#tiny-banner .tiny-banner-content2 {
+    background-image: url(Assets/Images/banner/b4.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    min-width: 30%;
+    padding: 10px 10px;
+    text-align: start;
+}
+
+#tiny-banner .tiny-banner-content2 h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+#tiny-banner .tiny-banner-content2 h3 {
+    color: #088178;
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-style: none;
+    text-decoration: none;
+}
+
+/* 3 */
+#tiny-banner .tiny-banner-content3 {
+    background-image: url(Assets/Images/banner/shirts-hangged.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+
+    height: 40vh;
+    min-width: 30%;
+    padding: 20px;
+}
+
+
+#tiny-banner .tiny-banner-content3 h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#tiny-banner .tiny-banner-content3 h3 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* News-Letters */
+
+#news-letter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(Assets/Images/banner/b14.png);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: 20% 30%;
+    margin-bottom: 50px;
+}
+
+#news-letter .news-letter-text {
+    padding: 20px;
+}
+
+#news-letter .news-letter-text h3 {
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+}
+
+#news-letter .news-letter-text p {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    padding: 0;
+}
+
+#news-letter .news-letter-text span {
+    font-size: 20px;
+    color: rgb(255, 196, 0);
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0;
+}
+
+#news-letter .email-input {
+    width: 40%;
+    display: flex;
+    padding: 10px;
+}
+
+#news-letter .email-input input {
+    width: 100%;
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 17px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+    /* border: 1px solid rgb(34, 34, 34); */
+}
+
+#news-letter .email-input button {
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    /* border: 1px solid rgba(34, 34, 34, 0); */
+}
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin: 10px 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin: 5px 0 0px 0;
+}
+
+footer a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    color: #088178;
+}
+
+
+footer .follow-us {
+    margin-top: 15px;
+}
+
+footer .follow-us h4 {
+    margin-top: 15px;
+}
+
+footer .follow-us i {
+    font-size: 20px;
+    color: #465b52;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+footer .follow-us .social-icon .ri-facebook-circle-fill:hover {
+    color: blue;
+    transition: all 0.2s ease;
+}
+
+footer .follow-us .social-icon .ri-instagram-fill:hover {
+    color: rgb(215, 0, 108);
+    transition: all 0.2s ease;
+}
+
+footer .follow-us .social-icon .ri-twitter-x-fill:hover {
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease;
+}
+
+footer .follow-us .social-icon .ri-pinterest-fill:hover {
+    color: rgb(255, 0, 8);
+    transition: all 0.2s ease;
+}
+
+footer .follow-us .social-icon .ri-youtube-fill:hover {
+    color: rgb(255, 0, 8);
+    transition: all 0.2s ease;
+}
+
+
+footer .col-install-app .row-app-installation {
+    padding: 5px 0;
+}
+
+footer .row-app-installation img {
+    border: 1px solid #088178;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .row-app-installation img {
+    margin: 5px 0 15px 0;
+}
+
+footer .copy-right {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+footer .copy-right p {
+    padding: 0 0;
+    color: black;
 }
