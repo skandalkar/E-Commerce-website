@@ -66,10 +66,10 @@ button.normal {
     transition: 0.3s;
 }
 
-/* .h-ruler {
-    margin: 0;
-    border: 0.01px solid rgb(48, 48, 48);
-} */
+.h-ruler {
+    margin: 0 20px;
+    border: 0.01px solid rgb(88, 88, 88);
+}
 
 /* Additional gradient text coloring */
 .gradient-text {
@@ -79,7 +79,6 @@ button.normal {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent; */
 }
 
 .gradient-text-small {
@@ -89,9 +88,7 @@ button.normal {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent; */
 }
-
 
 /* Copy-Right Related Sliding Text */
 .marquee {
@@ -120,13 +117,12 @@ button.normal {
 }
 
 
-
 /* Header section */
 #header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 80px;
+    padding: 15px 80px;
     background-color: #dee0e9;
     box-shadow: 0 5px 15px rgba(59, 59, 59, 0.1);
     z-index: 999;
@@ -217,13 +213,12 @@ button.normal {
 
 #hero p {
     font-size: 30px;
-    color: #2c2c2c;
+    color: #1a1a1a;
 }
 
 #hero button {
     background-image: url(Assets/Images/button.png);
     background-color: transparent;
-    /* background-color: #f58b002f; */
     color: #088178;
     border: 0;
     padding: 15px 60px 14px 60px;
@@ -243,7 +238,6 @@ button.normal {
     border-radius: 5px;
     margin: 20px 25px;
     box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.03);
-
 }
 
 .features-box img {
@@ -298,7 +292,6 @@ button.normal {
 }
 
 
-
 /* = Products Section = */
 #product1 {
     text-align: center;
@@ -310,7 +303,6 @@ button.normal {
 }
 
 #product1 .product-item {
-    /* background-color: #eeeeee; */
     width: 20%;
     min-width: 250px;
     padding: 10px 15px;
@@ -482,6 +474,7 @@ button.normal {
     flex-wrap: wrap;
 
 }
+
 /* div */
 
 #small-banner .banner-box-container {
@@ -490,7 +483,6 @@ button.normal {
     padding: 5px 10px;
 }
 
-/*  */
 
 /* banner content 1 */
 .small-banner-content {
@@ -793,6 +785,130 @@ footer .copy-right p {
     color: black;
 }
 
+
+/*  Shop Page*/
+
+#page-header {
+    background-image: url(Assets/Images/cheerful-face.jpg);
+    background-repeat: no-repeat;
+    background-position: top 0% right 0;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 100px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#page-header h1 {
+    font-size: 55px;
+}
+
+#page-header h2 {
+    font-size: 55px;
+}
+
+#page-header p {
+    font-size: 30px;
+    color: #1c7771;
+}
+
+#page-next {
+    text-align: center;
+}
+
+#page-next a {
+    color: white;
+    text-decoration: none;
+    background-color: #088178;
+    padding: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+#page-next a i {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Single Product Page */
+
+#product-details {
+    display: flex;
+}
+
+#product-details .single-product-image {
+    width: 35%;
+    margin-right: 40px;
+}
+
+.small-image-array {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-image-col {
+    width: 25%;
+    cursor: pointer;
+    flex-basis: 24%;
+}
+
+#product-details .single-product-details {
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 10px;
+    margin: 0 15px;
+}
+
+#product-details .single-product-details h5 {
+    padding: 40px 0 20px 0;
+    font-size: 20px;
+
+}
+
+#product-details .single-product-details h4 {
+    padding: 10px 0 20px 0;
+    font-size: 25px;
+
+}
+
+#product-details .single-product-details select {
+    display: block;
+    padding: 5px 10px;
+    margin: 15px 0 10px 0;
+}
+
+#product-details .single-product-details input {
+    width: 50px;
+    height: 45px;
+    padding-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#product-details .single-product-details input:focus {
+    outline: none;
+}
+
+#product-details .single-product-details button {
+    background-color: #088178;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#product-details .single-product-details span {
+    line-height: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+
 /*  */
 /* Responsive Section for website */
 /* Start the Media Query */
@@ -893,6 +1009,7 @@ footer .copy-right p {
         min-width: 100%;
         height: 35vh;
     }
+
     .small-banner-content2 {
         margin-top: 30px;
     }
@@ -914,6 +1031,54 @@ footer .copy-right p {
         margin-left: 380px;
         margin-top: -70px;
     } */
+
+    /* Shop page start */
+
+    #page-header {
+        padding: 60px 30px;
+        flex-wrap: wrap;
+        height: 50vh;
+    }
+
+    #page-header h1 {
+        font-size: 50px;
+    }
+
+    #page-header h2 {
+        font-size: 50px;
+    }
+
+    #page-header p {
+        font-size: 25px;
+    }
+
+    /* --- single-product-description */
+    #product-details {
+        display: flex;
+        padding: 50px 20px;
+    }
+
+    #product-details .single-product-image {
+        width: 70%;
+        height: 20vh;
+    }
+
+    #product-details .single-product-details {
+        width: 100%;
+        padding-top: 0px;
+        padding-left: 10px;
+        margin: 0 15px;
+    }
+
+    #product-details .single-product-details span {
+        line-height: 30px;
+        font-size: 20px;
+        text-align: justify;
+        overflow: auto;
+    }
+
+    /* Shop page end */
+
 }
 
 /* For General Phone Series perspective */
@@ -1111,31 +1276,61 @@ footer .copy-right p {
         margin: 0 1px;
     }
 
-}
+    /* Shop page start */
+    #page-header {
+        width: 100%;
+        height: 40vh;
+        padding: 0px 10px;
+        padding-top: 10px;
+    }
 
-/*  Shop Page*/
-#page-header {
-    background-image: url(Assets/Images/cheerful-face.jpg);
-    background-repeat: no-repeat;
-    background-position: top 0% right 0;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    padding: 0px 100px;
-    padding-top: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-}
-#page-header h1 {
-    font-size: 55px;
-}
-#page-header h2 {
-    font-size: 55px;
-}
-#page-header p {
-    font-size: 30px;
-    color: #088178;
+    #page-header h1 {
+        font-size: 25px;
+    }
+
+    #page-header h2 {
+        font-size: 35px;
+    }
+
+    #page-header p {
+        font-size: 13px;
+    }
+
+    #product-details {
+        display: block;
+        padding: 15px;
+    }
+
+    #product-details .single-product-image {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #product-details .single-product-details {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #product-details .single-product-details h5 {
+        margin-top: 25px;
+        padding: 40px 0 20px 0;
+        font-size: 20px;
+    }
+
+    #product-details .single-product-details select {
+        display: block;
+        padding: 5px 10px;
+        margin: 20px 0 10px 0;
+    }
+
+    #product-details .single-product-details button {
+        padding: 15px;
+    }
+
+    #product-details .single-product-details span {
+        text-align: justify;
+    }
+
+    /* Shop page end */
+
 }
