@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 10px 20px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            color: #fff;
+            margin-right: 20px; /* Adjust this value to change the space between logo and menu */
+        }
+        .navbar a {
+            color: #a0a0a0;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            color: #fff;
+        }
+        .navbar .cta-button {
+            background-color: #f89c22;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-left: auto; /* Pushes the button to the far right */
+        }
+        .navbar .cta-button:hover {
+            background-color: #e8890d;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Monica.</div>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#journal">Journal</a>
+        <a href="#contact">Contact</a>
+        <button class="cta-button">Let's Work Together</button>
+    </div>
+</body>
+</html>
